@@ -7,7 +7,7 @@ import { renderMarkdown } from '@/lib/markdown'
 
 interface Message {
   id: string
-  role: 'user' | 'assistant'
+  role: 'user' | 'assistant' | 'system' | 'data'
   content: string
 }
 
