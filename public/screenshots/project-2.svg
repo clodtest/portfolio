@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d2025"/>
+      <stop offset="100%" stop-color="#06101a"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#00c4d8" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="480" fill="url(#bg2)"/>
+  <rect width="800" height="480" fill="url(#dots)"/>
+
+  <!-- CRM Pipeline columns -->
+  <rect x="60" y="100" width="150" height="280" rx="10" fill="#0a1d22" stroke="#00c4d8" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="135" y="130" text-anchor="middle" font-family="monospace" font-size="10" fill="#00c4d8" opacity="0.7">NEW LEADS</text>
+  <rect x="75" y="145" width="120" height="32" rx="6" fill="#00c4d8" fill-opacity="0.12" stroke="#00c4d8" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="135" y="165" text-anchor="middle" font-family="monospace" font-size="9" fill="#00c4d8" opacity="0.8">Contact #1</text>
+  <rect x="75" y="185" width="120" height="32" rx="6" fill="#00c4d8" fill-opacity="0.08" stroke="#00c4d8" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="135" y="205" text-anchor="middle" font-family="monospace" font-size="9" fill="#00c4d8" opacity="0.6">Contact #2</text>
+  <rect x="75" y="225" width="120" height="32" rx="6" fill="#00c4d8" fill-opacity="0.08" stroke="#00c4d8" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="135" y="245" text-anchor="middle" font-family="monospace" font-size="9" fill="#00c4d8" opacity="0.6">Contact #3</text>
+
+  <rect x="230" y="100" width="150" height="280" rx="10" fill="#0a1d22" stroke="#00c4d8" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="305" y="130" text-anchor="middle" font-family="monospace" font-size="10" fill="#00c4d8" opacity="0.7">QUALIFYING</text>
+  <rect x="245" y="145" width="120" height="32" rx="6" fill="#00c4d8" fill-opacity="0.12" stroke="#00c4d8" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="305" y="165" text-anchor="middle" font-family="monospace" font-size="9" fill="#00c4d8" opacity="0.8">Lead A</text>
+
+  <rect x="400" y="100" width="150" height="280" rx="10" fill="#0a1d22" stroke="#00c4d8" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="475" y="130" text-anchor="middle" font-family="monospace" font-size="10" fill="#00c4d8" opacity="0.7">BOOKED</text>
+  <rect x="415" y="145" width="120" height="32" rx="6" fill="#00c4d8" fill-opacity="0.15" stroke="#00c4d8" stroke-width="0.8" stroke-opacity="0.6"/>
+  <text x="475" y="165" text-anchor="middle" font-family="monospace" font-size="9" fill="#00c4d8" opacity="0.9">Appt confirmed</text>
+
+  <rect x="570" y="100" width="170" height="280" rx="10" fill="#0a1d22" stroke="#00c4d8" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="655" y="130" text-anchor="middle" font-family="monospace" font-size="10" fill="#00c4d8" opacity="0.7">CONVERTED</text>
+  <rect x="585" y="145" width="140" height="32" rx="6" fill="#00c4d8" fill-opacity="0.2" stroke="#00c4d8" stroke-width="1" stroke-opacity="0.7"/>
+  <text x="655" y="165" text-anchor="middle" font-family="monospace" font-size="9" fill="#00c4d8">Closed deal</text>
+
+  <!-- Slack alert -->
+  <rect x="570" y="320" width="170" height="40" rx="8" fill="#00c4d8" fill-opacity="0.08" stroke="#00c4d8" stroke-width="0.8" stroke-opacity="0.5"/>
+  <text x="655" y="337" text-anchor="middle" font-family="monospace" font-size="9" fill="#00c4d8" opacity="0.7">Slack alert sent</text>
+  <text x="655" y="351" text-anchor="middle" font-family="monospace" font-size="8" fill="#00c4d8" opacity="0.45">Real-time conversion ping</text>
+
+  <!-- Metric badges -->
+  <text x="400" y="78" text-anchor="middle" font-family="monospace" font-size="17" fill="#00c4d8" opacity="0.8" letter-spacing="2">AI-POWERED CRM PIPELINE</text>
+  <text x="400" y="432" text-anchor="middle" font-family="monospace" font-size="10" fill="#00c4d8" opacity="0.4">GoHighLevel · Zapier · ChatGPT · Slack — 60% less admin overhead</text>
+</svg>
