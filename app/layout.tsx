@@ -1,51 +1,59 @@
 import type { Metadata, Viewport } from 'next'
+import { Outfit } from 'next/font/google'
+import Header from '@/components/site/Header'
+import Footer from '@/components/site/Footer'
+import { site } from '@/lib/site'
 import './globals.css'
 
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Clod Salvador — AI Automation Specialist',
-  description:
-    'Chat with my AI avatar — I build intelligent automation systems that eliminate manual bottlenecks and scale businesses. N8N · Make.com · GoHighLevel · ChatGPT.',
+  metadataBase: new URL(site.url),
+  title: {
+    default: `${site.name} — Real Estate & Mortgage Help`,
+    template: `%s | ${site.name}`,
+  },
+  description: site.description,
   openGraph: {
-    title: 'Clod Salvador — AI Automation Specialist',
-    description:
-      'AI-powered portfolio. Ask me anything about my projects, skills, or how I can automate your business.',
+    siteName: site.name,
+    title: `${site.name} — Real Estate & Mortgage Help`,
+    description: site.description,
     type: 'website',
+    url: site.url,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Clod Salvador — AI Automation Specialist',
-    description: 'AI-powered portfolio. Chat with my AI to learn how I can automate your business.',
+    title: `${site.name} — Real Estate & Mortgage Help`,
+    description: site.description,
   },
 }
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#050505',
+  themeColor: '#0f766e',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                var t = localStorage.getItem('theme');
-                if (t === 'light') document.documentElement.classList.add('light');
-              } catch(e) {}
-            `,
-          }}
-        />
-      </head>
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="en" className={outfit.variable}>
+      <body className="flex min-h-[100dvh] flex-col font-sans">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-teal-700 focus:px-4 focus:py-2 focus:text-white"
+        >
+          Skip to main content
+        </a>
+        <Header />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }

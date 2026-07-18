@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Placeholder — replace with Higgsfield family-3.jpg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe0f2"/><stop offset="1" stop-color="#e8f2f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="656" cy="120" r="54" fill="#ffffff" opacity="0.55"/>
+  <rect y="432" width="800" height="168" fill="#9ab87a"/>
+  <ellipse cx="144" cy="432" rx="56" ry="66" fill="#8a4f3d" opacity="0.35"/>
+  <ellipse cx="688" cy="432" rx="48" ry="54" fill="#8a4f3d" opacity="0.3"/>
+  <rect x="264" y="252" width="272" height="180" fill="#f4efe6" rx="6"/>
+  <polygon points="248,252 400,168 552,252" fill="#8a4f3d"/>
+  <rect x="379" y="333" width="43" height="99" fill="#6d9dc5" rx="4"/>
+  <rect x="296" y="291" width="43" height="43" fill="#bfe0f2" stroke="#8a4f3d" stroke-width="3" rx="3"/>
+  <rect x="461" y="291" width="43" height="43" fill="#bfe0f2" stroke="#8a4f3d" stroke-width="3" rx="3"/>
+  <rect x="16" y="567" width="450" height="25" fill="#1c1917" opacity="0.55" rx="6"/>
+  <text x="26" y="584" font-family="sans-serif" font-size="14" fill="#ffffff">Placeholder — replace with Higgsfield family-3.jpg</text>
+</svg>
